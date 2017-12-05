@@ -77,7 +77,7 @@ db.getCollection('hikings').insertMany([
 	  price: NumberDecimal('5')
 	},
 	{
-	  title: 'Rando montagne dans les Vosges',
+	  title: 'Rando Nancy-Metz !',
 	  photo: 'https://i2.wp.com/tout-metz.com/wp-content/uploads/2007/05/marche-nancy-metz-1.jpg',
 	  date: '18/12/17',
 	  guide_id: sophieId,
