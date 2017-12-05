@@ -63,11 +63,7 @@ export class HikingModel extends Model {
                 type: Number,
                 required: true
             },
-            persons_id: [String],
-            priceType: {
-                type: String,
-                required: true
-            },
+            hikers_id: [String],
             price: Number
         }, {
             versionKey: false

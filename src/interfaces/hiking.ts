@@ -12,9 +12,8 @@ export interface Hiking {
     description?: string;
     personMinNumber: number;
     personMaxNumber: number;
-    persons_id: string[];
-    priceType: string;
-    price: number;
+    hikers_id: string[];
+    price?: number;
 }
 
 export interface User {

@@ -31,9 +31,8 @@ import * as Joi from 'joi';
                     description: Joi.string(),
                     personMinNumber: Joi.number().required(),
                     personMaxNumber: Joi.number().required(),
-                    persons_id: Joi.array().items(Joi.string()),
-                    priceType: Joi.string().required(),
-                    price: Joi.number().required()
+                    hikers_id: Joi.array().items(Joi.string()),
+                    price: Joi.number()
                 })
             }
         },
