@@ -16,7 +16,7 @@ import * as Joi from 'joi';
         validate: {
             payload: Joi.object().keys({
                 photo: Joi.string(),
-                title: Joi.string(),
+                title: Joi.string().allow(''),
                 date: Joi.string().required(),
                 guide_id: Joi.string().required(),
                 startLocalization: Joi.string().required(),
@@ -24,7 +24,7 @@ import * as Joi from 'joi';
                 duration: Joi.string().required(),
                 distance: Joi.number().required(),
                 complexity: Joi.string().required(),
-                description: Joi.string(),
+                description: Joi.string().allow(''),
                 personMinNumber: Joi.number().required(),
                 personMaxNumber: Joi.number().required(),
                 hikers_id: Joi.array().items(Joi.string()),
@@ -41,7 +41,7 @@ import * as Joi from 'joi';
                 201: Joi.object().keys({
                     id: Joi.string().required(),
                     photo: Joi.string(),
-                    title: Joi.string(),
+                    title: Joi.string().allow(''),
                     date: Joi.string().required(),
                     guide_id: Joi.string().required(),
                     startLocalization: Joi.string().required(),
@@ -49,7 +49,7 @@ import * as Joi from 'joi';
                     duration: Joi.string().required(),
                     distance: Joi.number().required(),
                     complexity: Joi.string().required(),
-                    description: Joi.string(),
+                    description: Joi.string().allow(''),
                     personMinNumber: Joi.number().required(),
                     personMaxNumber: Joi.number().required(),
                     hikers_id: Joi.array().items(Joi.string()),

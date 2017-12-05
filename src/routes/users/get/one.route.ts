@@ -22,7 +22,8 @@ import * as Joi from 'joi';
                     email: Joi.string().required(),
                     firstname: Joi.string().required(),
                     lastname: Joi.string().required(),
-                    address: Joi.string().required()
+                    address: Joi.string().required(),
+                    photo: Joi.string()
                 })
             }
         },
