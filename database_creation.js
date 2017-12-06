@@ -1,4 +1,6 @@
-use hiking
+conn = new Mongo();
+db = conn.getDB('hiking');
+
 db.createCollection('users');
 db.createCollection('hikings');
 db.getCollection('users').insertMany([

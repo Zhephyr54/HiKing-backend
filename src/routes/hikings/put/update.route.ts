@@ -23,13 +23,13 @@ import * as Joi from 'joi';
                 startLocalization: Joi.string().required(),
                 endLocalization: Joi.string().required(),
                 duration: Joi.string().required(),
-                distance: Joi.number().required(),
+                distance: Joi.number().positive().required(),
                 complexity: Joi.string().required(),
                 description: Joi.string().allow(''),
-                personMinNumber: Joi.number().required(),
-                personMaxNumber: Joi.number().required(),
+                personMinNumber: Joi.number().positive().required(),
+                personMaxNumber: Joi.number().positive().required(),
                 hikers_id: Joi.array().items(Joi.string()),
-                price: Joi.number()
+                price: Joi.number().positive()
             })
         },
         payload: {
@@ -48,13 +48,13 @@ import * as Joi from 'joi';
                     startLocalization: Joi.string().required(),
                     endLocalization: Joi.string().required(),
                     duration: Joi.string().required(),
-                    distance: Joi.number().required(),
+                    distance: Joi.number().positive().required(),
                     complexity: Joi.string().required(),
                     description: Joi.string().allow(''),
-                    personMinNumber: Joi.number().required(),
-                    personMaxNumber: Joi.number().required(),
+                    personMinNumber: Joi.number().positive().required(),
+                    personMaxNumber: Joi.number().positive().required(),
                     hikers_id: Joi.array().items(Joi.string()),
-                    price: Joi.number()
+                    price: Joi.number().positive()
                 })
             }
         },

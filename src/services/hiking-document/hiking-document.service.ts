@@ -90,7 +90,8 @@ export class HikingDocumentService {
         return fromPromise(this._document.findOne({
             guide_id: { $regex: new RegExp(hiking.guide_id, 'i') },
             date: { $regex: new RegExp(hiking.date, 'i') },
-            startLocalization: { $regex: new RegExp(hiking.startLocalization, 'i') }
+            startLocalization: { $regex: new RegExp(hiking.startLocalization, 'i') },
+            endLocalization: { $regex: new RegExp(hiking.endLocalization, 'i') }
         }))
             .pipe(
                 flatMap(_ => !!_ ?
